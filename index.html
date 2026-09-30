@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Bitute | Sazón Criolla Tradicional</title>
+  <meta name="description" content="Auténtica comida criolla tradicional. Disfruta de nuestro Lomo Saltado, Ají de Gallina y reserva tu mesa sin esperas.">
+  <style>
+    :root {
+      --primary: #c0392b;
+      --secondary: #d35400;
+      --dark: #2c3e50;
+      --light: #fdfefe;
+      --bg: #f9f9f9;
+      --accent: #27ae60;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background-color: var(--bg); color: var(--dark); line-height: 1.6; }
+    header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 2.5rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.1rem; opacity: 0.95; }
+    .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; margin-top: 0.5rem; }
+    
+    .container { max-width: 800px; margin: 0 auto; padding: 1.5rem; }
+    .cta-banner { background: white; border-left: 5px solid var(--accent); padding: 1rem; border-radius: 8px; margin-bottom: 2rem; box-shadow: 0 2px 5px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .btn-reserva { background: var(--accent); color: white; text-decoration: none; padding: 0.75rem 1.25rem; border-radius: 6px; font-weight: bold; display: inline-block; transition: background 0.2s; }
+    .btn-reserva:hover { background: #219653; }
+
+    h2 { margin-bottom: 1rem; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+    .menu-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2.5rem; }
+    @media(min-width: 600px) { .menu-grid { grid-template-columns: 1fr 1fr; } }
+    
+    .card { background: white; padding: 1.2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .card-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.4rem; }
+    .card-title { font-weight: bold; font-size: 1.1rem; }
+    .price { color: var(--primary); font-weight: bold; font-size: 1.1rem; }
+    .card-desc { font-size: 0.9rem; color: #666; }
+
+    footer { text-align: center; padding: 2rem 1rem; background: var(--dark); color: #bdc3c7; font-size: 0.9rem; }
+    footer strong { color: white; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍲 Bitute</h1>
+    <p>Auténtica Sazón Criolla Tradicional</p>
+    <span class="badge">Atención rápida • Reservas garantizadas</span>
+  </header>
+
+  <main class="container">
+    <div class="cta-banner">
+      <div>
+        <strong>¿Vienes con la familia o en tu hora de almuerzo?</strong>
+        <p style="font-size:0.9rem; color:#666;">Asegura tu mesa en 30 segundos sin esperas ni llamadas saturadas.</p>
+      </div>
+      <a class="btn-reserva" href="https://wa.me/51999999999?text=Hola%20Bitute,%20deseo%20reservar%20una%20mesa%20para%20hoy." target="_blank">📱 Reservar por WhatsApp</a>
+    </div>
+
+    <h2>🍽️ Platos Fuertes Criollos</h2>
+    <section class="menu-grid">
+      <article class="card">
+        <div class="card-header">
+          <span class="card-title">Lomo Saltado Criollo</span>
+          <span class="price">S/ 38.00</span>
+        </div>
+        <p class="card-desc">Lomo fino salteado al wok al estilo tradicional, cebolla, tomate crujiente, papas amarillas y arroz con choclo.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <span class="card-title">Ají de Gallina Tradicional</span>
+          <span class="price">S/ 32.00</span>
+        </div>
+        <p class="card-desc">Cremoso guiso de pechuga deshilachada con base de ají amarillo, pecanas, huevo duro, aceituna botija y arroz blanco.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <span class="card-title">Seco de Res con Frijoles</span>
+          <span class="price">S/ 36.00</span>
+        </div>
+        <p class="card-desc">Tierno asado de tira macerado en chicha de jora y culantro fresco, acompañado de frijoles canarios criollos.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <span class="card-title">Causa Limeña de Pollo</span>
+          <span class="price">S/ 24.00</span>
+        </div>
+        <p class="card-desc">Suave masa de papa amarilla sazonada con ají amarillo y limón, rellena de pechuga con palta de estación.</p>
+      </article>
+    </section>
+
+    <h2>🕒 Horarios y Ubicación</h2>
+    <div class="card" style="margin-bottom: 2rem;">
+      <p>📍 <strong>Dirección:</strong> Centro Tradicional (Próxima apertura local y delivery)</p>
+      <p>⏰ <strong>Horario:</strong> Lunes a Domingo de 12:00 m. a 5:00 p.m.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>Restaurante Bitute</strong> &copy; 2026. Todos los derechos reservados.</p>
+    <p style="font-size:0.8rem; margin-top:0.4rem;">Proyecto impulsado bajo iniciativa de Transformación Digital.</p>
+  </footer>
+
+</body>
+</html>
